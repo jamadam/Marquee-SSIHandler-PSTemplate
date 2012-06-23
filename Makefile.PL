@@ -3,16 +3,16 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %params = (
-    NAME          => 'MojoSimpleHTTPServer-SSIHandler-PSTemplate',
+    NAME          => 'Marquee-SSIHandler-PSTemplate',
     AUTHOR        => 'sugama <sugama@jamadam.com>',
-    VERSION_FROM  => 'lib/MojoSimpleHTTPServer/SSIHandler/PSTemplate.pm',
-    ABSTRACT_FROM => 'lib/MojoSimpleHTTPServer/SSIHandler/PSTemplate.pm',
+    VERSION_FROM  => 'lib/Marquee/SSIHandler/PSTemplate.pm',
+    ABSTRACT_FROM => 'lib/Marquee/SSIHandler/PSTemplate.pm',
     LICENSE       => 'perl',
     PREREQ_PM     => {
     },
     BUILD_REQUIRES => {
-        'MojoSimpleHTTPServer'    	=> '0.01',
-        'Text::PSTemplate'    	  	=> '0.48',
+        'Marquee'    		=> '0.01',
+        'Text::PSTemplate'  => '0.48',
     },
     META_MERGE => {
         resources => {

@@ -1,10 +1,10 @@
 =head1 NAME
 
-MojoSimpleHTTPServer::SSIHandler::PSTemplate - PSTemplate handler
+Marquee::SSIHandler::PSTemplate - PSTemplate handler
 
 =head1 SYNOPSIS
 
-    $app->add_handler(epl => MojoSimpleHTTPServer::SSIHandler::PSTemplate->new);
+    $app->add_handler(epl => Marquee::SSIHandler::PSTemplate->new);
 
 =head1 DESCRIPTION
 

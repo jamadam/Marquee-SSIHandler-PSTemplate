@@ -1,7 +1,7 @@
-package MojoSimpleHTTPServer::SSIHandler::PSTemplate;
+package Marquee::SSIHandler::PSTemplate;
 use strict;
 use warnings;
-use Mojo::Base 'MojoSimpleHTTPServer::SSIHandler';
+use Mojo::Base 'Marquee::SSIHandler';
 use Text::PSTemplate;
 use File::Spec;
 use Mojo::Cache;
@@ -16,7 +16,7 @@ our $VERSION = '0.01';
         $engine->set_filter('=', \&Mojo::Util::html_escape);
         $engine->set_filename_trans_coderef(sub {
             return File::Spec->catfile(
-                    $MojoSimpleHTTPServer::CONTEXT->app->document_root, shift);
+                    $Marquee::CONTEXT->app->document_root, shift);
         });
         return $engine;
     });
@@ -41,11 +41,11 @@ __END__
 
 =head1 NAME
 
-MojoSimpleHTTPServer::SSIHandler::PSTemplate - PSTemplate handler
+Marquee::SSIHandler::PSTemplate - PSTemplate handler
 
 =head1 SYNOPSIS
 
-    $app->add_handler(epl => MojoSimpleHTTPServer::SSIHandler::PSTemplate->new);
+    $app->add_handler(epl => Marquee::SSIHandler::PSTemplate->new);
 
 =head1 DESCRIPTION
 
